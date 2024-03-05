@@ -1,0 +1,52 @@
+.element {
+    text-align: left;
+    position: relative;
+}
+
+.product-link {
+    display: block; /* Naredi povezavo blok element, da bo zasedla celoten prostor starša */
+    text-decoration: none; /* Odstrani privzeto podčrtanje povezave */
+    color: inherit; /* Dedi barvo besedila od starša */
+}
+
+.text-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.price {
+    color: gray;
+    font-size: smaller;
+}
+
+.brand-code {
+    font-size: small;
+    color: grey;
+}
+
+.name {
+    font-weight: bold;
+    color: black;
+}
+
+.original-price {
+    color: grey;
+    font-size: smaller;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    color: darkred;
+    font-size: smaller;
+    font-weight: bolder;
+    padding-left: 2px;
+}

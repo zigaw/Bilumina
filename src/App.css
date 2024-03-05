@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.element {
+  height: 450px; /* Določite fiksno višino */
+  width: 300px; /* Določite fiksno širino */
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+
+.displayImage {
+  height: 300px;
+  width: 300px;
+  margin: auto;
+}
+
+.blue-menu {
+  display: flex;
+  justify-content: flex-end;
+  background: cornflowerblue;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.cart-icon {
+  margin-top: 10px;
+  margin-right: 20px;
+  line-height: 40px;
+}
+
+/* Računalnik */
+@media (min-width: 1024px) {
+  .element {
+    flex-basis: calc(25% - 20px); /* Pri širini 25% starša */
+    margin-right: 10px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .element {
+    flex-basis: calc(33.333% - 20px); /* Pri širini 33.333% starša */
+  }
+}
+
+/* iPhone */
+@media (max-width: 767px) {
+  .element {
+    flex-basis: calc(100% - 20px); /* Pri širini 100% starša */
+  }
+}
+
+.popup {
+  position: absolute;
+  top: 40px; /* Razdalja med ikono košarice in sporočilom */
+  right: 0;
+  background-color: #ffffff; /* Belo ozadje */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px; /* Zaobljeni robovi */
+  border-color: rgba(77,71,69,0.67);
+  z-index: 1;
+}
